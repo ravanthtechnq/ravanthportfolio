@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
+body {
+    box-sizing: border-box;
+    width: 100%;
+    font-family: 'poppins', sans-serif;
+scroll-behavior: smooth;
+}
+
+.logo {
+    font-size: 55px;
+    font-weight: 600;
+    color: #0000008c;
+
+}
+
+li {
+    padding: 5px;
+}
+
+.nav-link {
+    font-size: 15px;
+    font-weight: bold;
+    border: 2px solid transparent;
+}
+
+.nav-link:hover {
+    border-bottom: 2px solid rgba(108, 99, 255, 255);
+    transition: .1s;
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home{
+    background-image: url(../image/Premium\ Photo\ _\ Copy\ space\ office\ black\ table\ with\ laptop\,\ notebook\,\ pencil\ and\ coffee\ cup\ with\ plat_.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+}
+.typing-effect {
+    color: #ffffff;
+    font-size: 34px;
+        font-family: 'Arial', sans-serif;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+}
+
+#typed-text:after {
+    content: "|";
+    display: inline-block;
+    animation: blink-caret .75s step-end infinite;
+    margin-left: 5px;
+}
+.highlight {
+    color: red;
+}
+@keyframes blink-caret {
+    from, to {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+.heading{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+.heading h2 span{
+    
+    color: #0000008c;
+    border-bottom: 3px solid rgba(108, 99, 255, 255);
+}
+
+.about{
+    display: flex;
+    justify-content: space-between;
+}
+.about-right {
+    width: 40%;
+ padding: 100px;
+}
+.about-left{
+    padding: 100px;
+    width: 60%;
+}
+
+@media screen and (max-width: 800px) {
+    
+    .about{
+        flex-direction: column;
+        width: 100%;
+    }
+    .about-left{
+        width: 100%;
+    }
+    .about-right{
+        width: 100%;
+    }
+    .exp{
+        flex-direction: column;
+    }
+    .logo{
+        font-size: 40px;
+    }
+    .lgo img{
+        width: auto;
+    }
+  }
+  .exp{
+    display: flex;
+    justify-content: space-between;
+  }
+  .exp-left{
+    width: 50%;
+  }
+  .exp-right{
+    width: 50%;
+  }
+
+  .exp ul li a{
+    text-decoration: none;
+    color: #0000008c;
+  }
+footer{
+    height: 10vh;
+    width: 100vw;
+    background-color: #0000008c;
+}
+
+.con-left{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 100px;
+}
